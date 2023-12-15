@@ -1,0 +1,377 @@
+@import url("index.html");  /* связь с html*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+/*настройка ползунка для сайта*/
+::-webkit-scrollbar {
+    width: 12px; /* Ширина ползунка */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red; /* Цвет ползунка */
+    border-radius: 6px; /* Скругление углов ползунка */
+}
+
+::-webkit-scrollbar-track {
+    background-color: grey; /* Цвет трека (полосы, по которой двигается ползунок) */
+}
+.open{
+    display: flex;
+}
+/*статчиная шапка сайта*/
+.for_head{
+    border:7px solid #cb0716;
+    border-radius:10px;
+    top:0;
+    left:0;
+    width:98.4vw;
+    height:100px;
+    position:fixed;
+    background-color: black;
+    z-index:1;
+    display:flex;
+    flex-direction:row;
+    text-decoration:none;
+}
+
+.nav {
+    margin-top:70px;
+    color:red;
+    list-style-type: none;
+    font-size:11px;
+    font-family: 'Comfortaa', cursive;
+}
+.nav li{
+    display:inline;
+}
+nav :hover{                    /* наведение */
+    color:white;
+    text-decoration: none;
+}
+
+.for_head img {      /* Стили только для изображения внутри .for_head */
+    max-width: 30%;
+    height: auto;
+
+}
+.for_head p {
+    color:whitesmoke;
+    font-family: 'Tektur', sans-serif;
+    font-size: 44px;
+    padding-left: 103px;
+    margin-top: 23px;
+}
+
+
+/*регулирование текстом на странице*/
+.for_head_text{
+    position:static;
+    padding-top:75px;
+}
+.text_ol_or_ul{
+    font-size:25px;
+    line-height: 1.5;
+    font-family: 'Comfortaa', cursive;
+}
+/*шрифт,размер,цвет */
+.textstyle_main{
+    font-family: 'Tektur', cursive;
+
+}
+.textstyle_main p{
+    font-size: 21px;
+    text-align: justify;
+    margin-right: 15px;
+}
+.textstyle_main z{
+    font-size: 40px;
+    text-align: justify;
+    margin-right: 15px;
+    scroll-margin-top:105px
+}
+/*боковая часть сайта*/
+.for_aside{
+    max-width:100%;
+    right: 0;
+    top:0;/*расположение*/
+    width:361px;
+    padding-left:14px;
+    height:2150px;  /* auto*/
+    border: 10px double red; /*solid*/
+    border-radius:10px;
+    background-color: black; /* Градиентный фон */
+    position:relative;  /*sticky relative fixed*/
+    bottom:535px;  /* двигать вверх вниз независимо*/
+    display:flex;/* 111111*/
+    flex-direction:column;
+    padding-right: 10px;
+}
+/*.for_aside a{*/
+/*    margin-bottom:37px*/
+/*}*/
+
+a{             /* Стили для кнопки в обычном состоянии */
+    color:inherit;
+    text-decoration: none;
+}
+a:hover{      /* наведение */
+    color:red;
+    text-decoration: none;
+}
+a:active {
+    color: darkred;
+}
+.href_color{
+    color:red
+}
+a.href_color:hover{
+    color:white;
+    text-decoration: none;
+}
+.text_ol_or_ul{      /*размер,расстояние,стиль шрифта*/
+    font-size:25px;
+    line-height: 1.5;
+    font-family: 'Comfortaa', cursive;
+}
+.text_ol_or_ul adress{
+    font-size:15px;
+}
+.textstyle_main{
+    font-family: 'Tektur', cursive;
+}
+.textstyle_main p{
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 15px;
+}
+.textstyle_main z{
+    font-size: 40px;
+    text-align: justify;
+    margin-right: 15px;
+    scroll-margin-top:105px
+}
+.main-article {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.for_footer .social-icon {
+    display: inline-block;
+    margin-right:20px;
+    margin-bottom:40px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+
+}
+
+.for_footer .social-icon img {
+    width: 76px; /* Размер иконки, укажите подходящее значение */
+    height: auto;
+}
+
+.for_footer .social-icon:hover {
+    transform: scale(1.1); /* Увеличение размера при наведении курсора */
+}
+.for_footer{
+    bottom:0;
+    margin-top:50px;
+    border-radius:10px;
+    width:97.9vw;
+    height:90px;
+    border:7px solid red;
+    display:flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.for_footer a{
+    padding-left:150px;
+    padding-top:45px;
+    color:whitesmoke;
+}
+.for_footer img{
+    max-width:100%;
+    padding-right:110px;
+}
+
+.body_settings{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gifkaslowed.gif'); /* Градиент от темно-серого к черному */
+    color: whitesmoke; /* Белый цвет текста */
+    background-size: contain;
+}
+
+/*бургер меню*/
+.header_burger{
+    display: none;
+    position:relative;
+    z-index:50;
+    width:30px;
+    height:18px;
+    margin-top: 44px;
+    margin-left: 35px;
+    align-items:center;
+}
+.header_burger span{
+    height:4px;
+    width:80px;
+    background-color: red;
+}
+.header_burger::before, .header_burger::after{
+    content: '';
+    position: absolute;
+    height:4px;
+    width: 74%;
+    left:14%;
+    background-color: red;
+    transition: all 0.3s ease 0s;
+}
+.header_burger::before { top: 0 }
+
+.header_burger::after { bottom: 0 }
+/*анимация бургер меню*/
+.header_burger.active span {transform: scale(0)}
+.header_burger.active::before{
+    top:64%;
+    transform:rotate(-45deg) translate(0,-50%);
+}
+.header_burger.active::after{
+    top:50%;
+    transform:rotate(45deg) translate(0,50%);
+}
+.adapt{
+    width:1100px;
+    height:500px;
+}
+
+@media (max-width:1140px){                              /*отрубаем for aside*/
+    .for_aside{    /*боковая часть сайта*/
+        max-width:100%; /* масштабирование картинки под рамки aside*/
+        right: 0;
+        top:0;/*расположение*/
+        width:450px;
+        padding-top:30px;      /* отступ внутри рамки padding-top:5px*/
+        padding-left:45px;
+        height:1500px;  /* auto*/
+        border: 10px solid red;
+        background-color: black; /* Градиентный фон */
+        position:relative;  /*sticky relative fixed*/
+        bottom:535px;  /* двигать вверх вниз независимо*/
+        display:none;/* 111111*/
+        flex-direction:column;
+    }
+}
+
+@media (min-width:375px) and (max-width:517px){ /*медиа для телефонов*/
+    *{margin:0;
+        }              /*padding: 0;*/
+    .textstyle_main{
+        font-family: 'Tektur', cursive;
+        font-size:14px;  /* 0.98em */
+    }
+    .textstyle_main h1{
+        font-size:23px
+    }
+    .main-article {
+        display: flex;
+        justify-content:flex-end;
+    }
+    .text_ol_or_ul{
+        font-size:25px;
+        font-family: 'Comfortaa', cursive;
+    }
+    .for_head{                        /* Cтатичная шапка */
+        border:7px solid #cb0716;
+        border-radius:10px;
+        top:0;
+        left:0;
+        width:218vw;
+        height:100px;
+        position:fixed;
+        background-color: black;
+        font-size:32px;
+        z-index:1;
+        display:flex;
+        flex-direction:row;
+        text-decoration:none;
+    }
+    .for_head p {
+        color:whitesmoke;
+        font-size:28px;
+        padding-left:44px;
+        margin-top: 31px;
+        align-items:stretch;
+    }
+    .for_head_text{         /*регулирование текстом на странице*/
+        position:static; /*убрать потом*/
+        padding-top:113px;
+        width:219%
+    }
+
+    .header_burger { display: flex }
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: rgba(0, 0, 0, 0.9);
+        margin-top:113px; /*70*/
+        color:red;
+        list-style-type: none;
+        font-size:33px;
+        font-family: 'Comfortaa', cursive;
+        animation: burgerAnimation 0.4s;
+    }
+    .adapt{
+        width:950px;
+    }
+    .nav ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .nav li{
+        display: flex;
+    }
+    .cher{
+        visibility:hidden ;
+    }
+    .main-article {
+        flex-direction: row-reverse;
+    }
+    .for_aside{
+        display:none;
+        right:0;
+        max-width:100%;
+    }
+    .for_footer{
+        bottom:0;
+        margin-top:15px;
+        width:217.9vw;
+        height:90px;
+        border:7px solid red;
+        display:flex;
+        background-color: black;
+    }
+    .for_footer a{
+        display:block;
+        padding-left:90px;
+        padding-top:45px;
+        color:whitesmoke;
+    }
+    .for_footer img{
+        max-width:99%;
+        padding-top:5px;
+        padding-right:28px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
